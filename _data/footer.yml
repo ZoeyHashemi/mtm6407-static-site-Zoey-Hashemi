@@ -1,0 +1,41 @@
+footer-menu-one:
+  - title: "Bloom; Natural Beauty & Spa"
+    url: "#"
+  - title: "Latest Services"
+    url: "/all-services"
+  - title: "Team Members"
+    url: "/team"
+ 
+  - title: "Awards Winning"
+    url: "#"
+  - title: "About Company"
+    url: "/about-us"
+
+footer-menu-two:
+  - title: "Beauty Salon"
+    url: "all-services"
+  - title: "Hair Treatments"
+    url: "all-services"
+  - title: "Facial"
+    url: "all-services"
+  - title: "Makeup"
+    url: "all-services"
+  - title: "Body Treatments"
+    url: "all-services"
+  - title: "Spa & Foot Massage"
+    url: "all-services"
+
+footer-menu-bottom:
+  - title: "Services"
+    url: "/all-services"
+  - title: "My Account"
+    url: "/#"
+  - title: "Privacy"
+    url: "/#"
+
+contact:
+  location: "523 Main Street, Ottawa"
+  phone: "Call : +01613 (345) 6789"
+  email: "info@bloom.com"
+
+copy_text: "&copy; 2024 Zoey Hashemi, All Rights Reserved"

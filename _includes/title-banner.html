@@ -1,0 +1,18 @@
+<!-- Page Banner Start -->
+<section class="page-banner text-white py-165 rpy-130" style="background-image: url({{ page.banner-image | relative_url }});">
+	<div class="container">
+		<div class="banner-inner {% if page.banner-text-center %}text-center{% endif %}">
+			<span class="bg-text">{{ page.banner-bg-text }}</span>
+			<h1 class="page-title wow fadeInUp delay-0-2s">{{ page.title }}</h1>
+			{% if page.parent %}
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb wow fadeInUp delay-0-4s">
+					<li class="breadcrumb-item"><a href="{{ page.parent-url }}">{{ page.parent }}</a></li>
+					<li class="breadcrumb-item active">{{ page.title }}</li>
+				</ol>
+			</nav>
+			{% endif %}
+		</div>
+	</div>
+</section>
+<!-- Page Banner End -->

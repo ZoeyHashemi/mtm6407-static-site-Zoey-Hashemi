@@ -1,0 +1,16 @@
+<!-- Page Banner Start -->
+{% if page.image %}
+{% assign title-bg = page.image %}
+{% else %}
+{% assign title-bg = 'assets/images/banners/page-banner.jpg' %}
+{% endif %}
+
+<section class="page-banner text-white py-165 rpy-130" style="background-image: url(assets/images/path-to-your-image.jpg);">
+	<div class="container">
+		<div class="banner-inner {% if page.banner-text-center %}text-center{% endif %}">
+			<span class="bg-text">Archives</span>
+			<h1 class="page-title wow fadeInUp delay-0-2s">Tag: {{ page.title }}</h1>
+		</div>
+	</div>
+</section>
+<!-- Page Banner End -->

@@ -1,0 +1,12 @@
+{% assign logos = site.data.logo-carousel.logos.items %}
+<!-- Client Logo Section Start -->
+<div class="client-logos text-center pt-80 pb-70">
+	<div class="container">
+		<div class="client-logo-wrap">
+		{% for logo in logos %}
+		   <a href="{{ logo.url | relative_url }}"><img src="{{ logo.image | relative_url }}" alt="Client Logo"></a>
+		{% endfor %}
+	   </div>
+	</div>
+</div>
+<!-- Client Logo Section End -->

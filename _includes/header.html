@@ -1,0 +1,175 @@
+{% assign nav_items = site.data.main-navigation.main %}
+
+<!-- main header -->
+<header class="main-header">
+	<div class="header-top-wrap bg-black text-white py-10">
+		<div class="container">
+			<div class="header-top">
+				<ul>
+					<li>
+						<i class="far fa-clock"></i>
+						<span>Opening hours :</span> Monday -
+						friday, 08am - 05pm
+					</li>
+					<li>
+						<i class="flaticon-locations"></i>
+						<span>Address :</span> 55 Main Street, 2nd
+						Block, Ottawa
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--Header-Upper-->
+	<div class="header-upper">
+		<div class="container-fluid clearfix">
+			<div
+				class="header-inner d-flex align-items-center bg-white"
+			>
+				<div class="logo-outer">
+					<div class="logo">
+						<a href="{{ site.url }}"><img src="{{ 'assets/images/logos/logo.png' | relative_url }}" alt="Logo" title="Logo"/></a>
+					</div>
+				</div>
+
+				<div class="nav-outer clearfix">
+					<!-- Main Menu -->
+					<nav class="main-menu navbar-expand-lg">
+						<div class="navbar-header">
+							<!-- Toggle Button -->
+							<button
+								type="button"
+								class="navbar-toggle"
+								data-toggle="collapse"
+								data-target=".navbar-collapse"
+							>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<div class="mobile-logo p-15 m-auto">
+								<a href="{{ site.url }}"><img src="{{ 'assets/images/logos/logo.png' | relative_url }}" alt="Logo" title="Logo"/></a>
+							</div>
+						</div>
+
+						<div class="navbar-collapse collapse clearfix">
+							<ul class="navigation clearfix">
+									{% for nav in nav_items %}
+											<li class="{% if nav.children %}dropdown{% endif %}">
+													<a href="{{ nav.url | relative_url }}">{{ nav.title }}</a>
+													{% if nav.children %}
+															<ul>
+																	{% for child in nav.children %}
+																			<li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+																	{% endfor %}
+															</ul>
+													{% endif %}
+											</li>
+									{% endfor %}
+							</ul>
+					</div>
+					</nav>
+					<!-- Main Menu End-->
+				</div>
+
+				<!-- Menu Button -->
+				<div class="menu-icons">
+					<button class="cart">
+						<i class="fas fa-shopping-cart"></i>
+					</button>
+
+					<!-- Nav Search -->
+					<div class="nav-search py-15">
+						<button class="fa fa-search"></button>
+						<form action="#" class="hide">
+							<input
+								type="text"
+								placeholder="Search"
+								class="searchbox"
+								required=""
+							/>
+							<button
+								type="submit"
+								class="searchbutton fa fa-search"
+							></button>
+						</form>
+					</div>
+
+					<!-- menu sidbar -->
+					<div class="menu-sidebar">
+						<button>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End Header Upper-->
+</header>
+
+<!--Form Back Drop-->
+<div class="form-back-drop"></div>
+
+<!-- Hidden Sidebar -->
+<section class="hidden-bar">
+	<div class="inner-box text-center">
+		<div class="cross-icon">
+			<span class="fa fa-times"></span>
+		</div>
+		<div class="title">
+			<h4>Get Appointment</h4>
+		</div>
+
+		<!--Appointment Form-->
+		<div class="appointment-form">
+			<form
+				method="post"
+				action="/contact"
+			>
+				<div class="form-group">
+					<input
+						type="text"
+						name="text"
+						value=""
+						placeholder="Name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<input
+						type="email"
+						name="email"
+						value=""
+						placeholder="Email Address"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<textarea
+						placeholder="Message"
+						rows="5"
+					></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="theme-btn">
+						Submit now
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<!--Social Icons-->
+		<div class="social-style-one">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-pinterest-p"></i></a>
+		</div>
+	</div>
+</section>
+<!--End Hidden Sidebar -->

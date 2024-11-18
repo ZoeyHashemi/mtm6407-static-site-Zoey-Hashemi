@@ -1,0 +1,60 @@
+<!-- Contact Us Start -->
+<section class="faq-contact-services rel z-1 py-150 rpy-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="faq-contact-left rmb-55 wow fadeInLeft delay-0-2s">
+					<img src="{{ 'assets/images/contacts/faq-page.jpg' | relative_url }}" alt="Contact">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="faq-contact-content wow fadeInRight delay-0-2s">
+					{% include section-title.html bg-text="message" sub-title="Contact Us" title="Have Any Questions On Minds? Say Hi" %}
+					<form action="#" class="team-page-form">
+						<div class="row clearfix">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label for="name"><i class="far fa-user"></i></label>
+									<input type="text" id="name" name="name" class="form-control" value="" placeholder="Full Name">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+								   <label for="number"><i class="fas fa-phone"></i></label>
+									<input type="text" id="number" name="number" class="form-control" value="" placeholder="Phone Number">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+								   <label for="email"><i class="far fa-envelope"></i></label>
+									<input type="email" id="email" name="email" class="form-control" value="" placeholder="Email Address" required>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-30">
+								<div class="form-group">
+									<select name="services" id="services">
+									   <option value="services">Subject</option>
+									   <option value="service1">Hair Cutting</option>
+									   <option value="service2">Foot Massage</option>
+									   <option value="service3">Nail Colors</option>
+								   </select>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group">
+									<textarea rows="3" id="message" class="form-control" placeholder="Message" required=""></textarea>
+								</div>
+							</div>
+							<div class="col-xl-12">
+								<div class="form-group mb-0">
+									<button type="submit" class="theme-btn style-six">Send message <i class="fas fa-long-arrow-alt-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Contact Us End -->

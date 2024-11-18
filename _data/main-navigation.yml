@@ -1,0 +1,19 @@
+main:
+  - title: "Home"
+    url: "/"
+    parent: false
+  - title: "Services"
+    url: "/all-services"
+    parent: false
+  - title: "Booking"
+    url: "/booking"
+    parent: false
+  - title: "About Us"
+    url: "/about-us"
+    parent: false
+  - title: "Team Members"
+    url: "/team"
+    parent: false
+  - title: "Contact"
+    url: "/contact"
+    parent: false
