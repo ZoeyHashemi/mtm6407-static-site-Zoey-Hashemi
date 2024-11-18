@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    {% include head.html %}
+    <body class="home-one">
+        <div class="page-wrapper">
+            <!-- Preloader -->
+            <div class="preloader"></div>
+            {% include header.html %}
+
+            {{ content }}
+
+            {% include footer.html %}
+        </div>
+        <!--End pagewrapper-->
+
+        <!-- Scroll Top Button -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <span class="fa fa-angle-up"></span>
+        </button>
+
+        {% include scripts.html %}
+    </body>
+</html>

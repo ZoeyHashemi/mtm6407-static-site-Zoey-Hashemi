@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% if page.page-banner %}
+	{% include title-banner.html %}
+{% endif %}
+<!-- Services Details Start -->
+<section class="service-details py-150 rpy-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="service-details-content-wrap">
+					{{ content }}
+				</div>
+			</div>
+			<div class="col-lg-4">
+				{% include sidebar-service.html %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Services Details End -->
