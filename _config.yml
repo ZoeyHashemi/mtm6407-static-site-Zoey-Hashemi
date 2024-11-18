@@ -1,0 +1,26 @@
+# ----------------------------------------------------
+# Name: Bloom Natural Beauty & Spa Jekyll Theme
+# Version: 1.0
+# Author: Zoey Hashemi
+# Author URL: 'https://github.com/ZoeyHashemi/'
+# Copyright © Bloom Natural Beauty & Spa. All Rights Reserved.
+#
+# ----------------------------------------------------
+title: Bloom Natural Beauty & Spa
+theme_version: 1.0.0
+baseurl: '' 
+
+
+# SASS/SCSS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Markdown Processor
+markdown: kramdown
+
+# Build Settings and Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+
